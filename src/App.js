@@ -4,10 +4,8 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-    <Navbar title="TextUtils" aboutText="About"/>
-    {/*<Navbar title="TextUtils" />*/}
-
-     {/*<Navbar/>*/}
+      <Navbar title="TextUtils" aboutText="About TextUtils" />
+      <Navbar/>
     </>
   );
 }
