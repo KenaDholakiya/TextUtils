@@ -33,7 +33,7 @@ export default function Navbar(props) {
               </a> */}
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
+              <Link className="nav-link " aria-current="page" to="/">
                 Home
               </Link>
             </li>
@@ -54,7 +54,16 @@ export default function Navbar(props) {
               Search
             </button>
           </form> */}
-          
+{/*           
+          <div className="d-flex">
+            <div className="bg-primary rounded mx-2" onClick={()=>{props.toggleMode('primary')}} style={{height:'30px',width:'30px', border:'2px solid black'}}></div>
+            <div className="bg-danger rounded mx-2" onClick={()=>{props.toggleMode('danger')}} style={{height:'30px',width:'30px',border:'2px solid black'}}></div>
+            <div className="bg-success rounded mx-2" onClick={()=>{props.toggleMode('success')}} style={{height:'30px',width:'30px',border:'2px solid black'}}></div>
+            <div className="bg-warning rounded mx-2" onClick={()=>{props.toggleMode('warning')}} style={{height:'30px',width:'30px',border:'2px solid black'}}></div>
+            <div className="bg-light rounded mx-2" onClick={()=>{props.toggleMode('light')}} style={{height:'30px',width:'30px',border:'2px solid black'}}></div>
+            <div className="bg-dark rounded mx-2" onClick={()=>{props.toggleMode('dark')}} style={{height:'30px',width:'30px',border:'2px solid white',color:'white'}}></div>
+            
+          </div> */}
          
           {/* Dark Mode Button */}
           <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
@@ -66,7 +75,7 @@ export default function Navbar(props) {
               onClick={props.toggleMode}
             />
             <label className="form-check-label" htmlFor="switchCheckDefault" >
-              Enable Dark Mode
+              Toggle Mode
             </label>
           </div>
         </div>

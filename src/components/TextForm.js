@@ -18,11 +18,11 @@ export default function TextForm(props) {
   };
   // copy to text function
   const handleCopyClick = () => {
-    console.log("I am Copy");
-    var text=document.getElementById("myBox");
-    text.select();
-    navigator.clipboard.writeText(text.value);
-    document.getSelection().removeAllRanges();
+    // console.log("I am Copy");
+    // var text=document.getElementById("myBox");
+    // text.select();
+    navigator.clipboard.writeText(text);
+    // document.getSelection().removeAllRanges();
     props.showAlert("Copied to Clipboard!","success");
 
   };
